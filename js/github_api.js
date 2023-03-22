@@ -24,7 +24,7 @@ class githubApi{
 
             try{
                
-                
+                //
 
                 githubInfo.then((value) => {
                     
