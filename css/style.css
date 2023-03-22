@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+ul {
+    position: relative;
+    display: flex;
+
+
+
+}
+
+li {
+    list-style: none;
+    float: right;
+    padding: 0 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+   
+
+}
+
+li a {
+    
+    color: rgb(255, 255, 255);
+    
+}
+li a:hover {
+    font-weight: 900;
+    transition: all .4s;
+
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(71, 0, 137);
+    color: aliceblue;
+    width: 100%;
+    z-index: 1;
+    height: 5rem;
+
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-display {
+    display: none;
+}
+
+
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: aliceblue;
+    z-index: 3;
+    float: left;
+    padding: .2rem;
+    height: 80px;
+}
+
+.logo{
+    -webkit-transform: rotate(0deg) ;
+    transform: rotate(0deg);
+    -webkit-transition: all .5s ;
+    transition: all .5s ;
+}
+
+.rotate-logo{
+    -webkit-transform: rotate(110deg) ;
+    transform: rotate(110deg);
+    -webkit-transition: all .5s ;
+    transition: all .5s ;
+}
+
+.navi{
+      position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(71, 0, 137);
+    color: aliceblue;
+    width: 100%;
+    z-index: 1;
+    height: 5rem;
+}
+
+
+
+/*-------- HEADER --------*/
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header-bg {
+    width: 100%;
+    height: 100%;
+
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.header-bg img {
+    width: 100%;
+}
+
+.header-title {
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    float: left;
+    height: inherit;
+    color: rgb(71, 0, 137);
+    flex-direction: column;
+}
+
+.header-alt-title {
+    font-size: 2.8rem;
+    text-align: center;
+
+    color: rgb(35, 35, 35);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1.fadeIn span {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 0.5s ease-out forwards;
+    display: inline-block;
+}
+
+h1.fadeIn span:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+
+h1.fadeIn span:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+#alt-title-name {
+    font-family: 'Charis SIL', serif;
+    font-size: 1.2rem;
+
+}
+
+.alt-title-word {
+    font-family: 'Charis SIL', serif;
+    font-size: 2.4rem;
+
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.fade {
+    opacity: 0;
+
+}
+
+.social {
+    display: flex
+}
+
+
+.header-social {
+
+    right: 0;
+    float: right;
+    z-index: 8;
+
+
+
+}
+
+.social-card {
+
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    background-color: rgb(71, 0, 137);
+    border-radius: 10px 0 0 10px;
+
+}
+
+.card-left {
+    pointer-events: none;
+    padding: 1.5rem;
+    font-size: 30px;
+    color: white;
+
+
+}
+
+.card-right {
+
+    transition: all .7s;
+    padding-right: 1.5rem;
+    font-size: 20px;
+    color: white;
+
+}
+
+.card-right-hover {
+
+    transition: all .7s;
+}
+
+
+.section-about {
+    background-image: url("https://i.hizliresim.com/38bmctq.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+
+
+}
+
+.about-title {
+    text-align: center;
+}
+
+.about-title h1 {
+    color: white;
+    padding-top: 4rem;
+    font-size: 60px;
+}
+
+.about-underline {
+    border: none;
+    border-top: 0.2rem solid #fff;
+    max-width: 35rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+}
+
+.container {
+    position: relative;
+    padding: 4rem 6rem;
+}
+
+.about-panel {
+    display: flex;
+    padding: 2.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.about-img {
+    float: left;
+    width: 70%;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.about-img img {
+    
+    width: 100%;
+
+    -webkit-transform: rotate(15deg) scale(1.3);
+    transform: rotate(15deg) scale(1.3);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+
+}
+
+.about-img img:hover {
+
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+
+}
+
+.about-text {
+    width: 100%;
+    float: right;
+    padding: 0 3rem;
+}
+
+
+
+.textAbout {
+    background-color: rgba(54, 0, 104, 0.507);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.section-about {
+    background-image: url("https://i.hizliresim.com/38bmctq.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+
+
+}
+
+.section-about-title {
+    text-align: center;
+}
+
+.section-about-title h1 {
+    color: white;
+    padding-top: 4rem;
+    font-size: 60px;
+}
+
+.section-about-underline {
+    border: none;
+    border-top: 0.2rem solid #fff;
+    max-width: 35rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+}
+
+.section-container {
+    position: relative;
+    padding: 4rem 6rem;
+}
+
+.section-about-panel {
+    display: flex;
+    padding: 2.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.section-about-img {
+    float: left;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border:5px solid rgb(137, 137, 137)
+}
+
+.section-about-img img {
+    
+    width: 100%;
+    height: fit-content;
+    transform: scale(1.1);
+    
+
+}
+
+
+
+.section-about-text {
+    width: 100%;
+    float: right;
+    padding: 0 0 0 6rem;
+}
+
+
+
+.section-textAbout {
+    background-color: rgba(54, 0, 104, 0.507);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+
+.section-mission-text{
+    padding:2rem 2rem 2rem 2rem;
+    margin: 1rem 0;
+    color:white;
+    font-size: 30px;;
+    height:auto;
+    border-radius: 10px;
+    
+    
+    
+}
+
+.section-mission-text:hover{
+    color:rgb(35, 35, 35);
+    background-color: #fff;
+    
+    
+    transition: .4s ease-in-out;
+}
+
+
+
+h1.fadeInn span {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeIn 0.5s ease-out forwards;
+    display: inline-block;
+}
+
+h1.fadeInn span:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+
+h1.fadeInn span:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+h1.fadeInn span:nth-of-type(4) {
+    animation-delay: 1.5s;
+}
+
+
+@keyframes fadeInn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.learn-more-btn{
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(137, 137, 137);
+    padding: .6rem;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 15px;
+    visibility: hidden;
+    /* display: none; */
+}
+
+.section-mission-text:hover .learn-more-btn{
+    visibility: visible;
+    transition: .4s ease-in-out;
+}
+
+
+
+.github-panel{
+    display: block;
+    text-align: center;
+    padding: 3rem 0;  
+    height: inherit;
+    background-color: rgb(35, 35, 35);;
+}
+
+
+.github-about-title h1 {
+    color: rgb(255, 255, 255);;
+    padding-top: 4rem;
+    font-size: 60px;
+}
+
+.github-about-underline {
+    border: none;
+    border-top: 0.2rem solid rgb(255, 255, 255);
+    max-width: 35rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+}
+
+
+.github-container{
+    display: flex;
+    padding: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.github-col{
+    border-radius: 10px;
+    background-color: blueviolet;
+    float: left;
+    width: 33.33%;
+    margin: 1rem;
+    height:inherit;
+    
+}
+.card-langu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.github-cards{
+    
+    padding: .5rem;
+    height:inherit;
+    
+}
+
+.github-cards h4{
+    
+    padding: 2rem 0; 
+    font-size: 25px;
+    color: white
+    
+}
+
+.langu{
+    width: 50%;
+    float: left;
+    padding: 1rem 0;
+}
+
+.langu p{
+    font-size: 18px;
+    
+    padding: 0 2rem;
+    color:#fff;
+}
+
+.github-card-btn{
+    position: relative;
+    padding: 1.5rem;
+}
+
+.card-btn {
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(137, 137, 137);
+    bottom: 0;
+    padding: .6rem 1.5rem;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 15px;
+}
+
