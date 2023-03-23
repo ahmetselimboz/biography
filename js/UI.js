@@ -83,28 +83,58 @@ class UI {
 
                 ver.then((val) => {
                     console.log(val);
-
-                    for (let i = 0; i < 15; i++) {
-                        var languStr = `<div class="langu">
-                        <p>${val[i]} 32.4%</p>
-                    </div>`
-
-                        this.githubCard.innerHTML += `
-                    <div class="github-col">
-                    <div class="github-cards">
-                        <h4>${value[j].name}</h4>
-                        <div class="card-langu">` + languStr +
+                    
 
 
-                            `</div>
-                        <div class="github-card-btn">
-                            <a class="card-btn" href="#">View</a>
-                        </div>
-            
-                    </div>
-            
-                </div>`
+                    for(let i = 0; i<15;i++){
+                        var p = document.createElement("p");
+                    p.innerText = `${val[i]}: 32.4%`;
+                    var divLangu = document.createElement('div');
+                    divLangu.classList.add('langu');
+                    divLangu.appendChild(p);
                     }
+                    // const p = document.createElement("p");
+                    // p.innerText = "Javacript: 32.4%";
+                    // const divLangu = document.createElement('div');
+                    // divLangu.classList.add('langu');
+                    // divLangu.appendChild(p);
+                    const divCardLangu = document.createElement('div');
+                    divCardLangu.classList.add('card-langu');
+                    divCardLangu.appendChild(divLangu);
+                    
+                    const divGithubCards = document.createElement('div');
+                    divGithubCards.classList.add('github-cards');
+                    divGithubCards.appendChild(divCardLangu);
+                    const h4 = document.createElement('h4');
+                    h4.innerText = 'Proje Adi';
+                    divGithubCards.appendChild(h4);
+                    const divGithubCol = document.createElement('div');
+                    divGithubCol.classList.add('github-col');
+                    divGithubCol.appendChild(divGithubCards);
+
+
+                    this.githubCard.appendChild(divGithubCol);
+
+
+
+                //         this.githubCard.innerHTML += `
+                //     <div class="github-col">
+                //     <div class="github-cards">
+                //         <h4>Proje Adi</h4>
+                //         <div class="card-langu">
+                //         <div class="langu">
+                //         <p>javascript 32.4%</p>
+                //     </div>
+                //     </div>
+                //         <div class="github-card-btn">
+                //             <a class="card-btn" href="#">View</a>
+                //         </div>
+            
+                //     </div>
+            
+                // </div>`
+                        
+                    
 
 
 
