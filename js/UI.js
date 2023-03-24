@@ -79,29 +79,57 @@ class UI {
 
 
                 const lang = gitApi.getRepoLang(value[j].languages_url);
-                const ver = gitApi.getKeys(lang);
+                const keys = gitApi.getKeys(lang);
+                const contains = gitApi.getValue(lang);
+                var yuzdeler  = [];
+                var keyaa = [];
+                var cont = [];
 
-                ver.then((val) => {
-                    console.log(val);
 
-                    val.forEach((element) => {
-                        var languStr = element;
-                    this.githubCard.innerHTML += `
-                    <div class="github-col">
-                    <div class="github-cards">
-                        <h4>${value[j].name}</h4>
-                        <div class="card-langu">
-                        <div class="langu">
-                        <p>${languStr} 32.4%</p>
-                    </div></div>
-                        <div class="github-card-btn">
-                            <a class="card-btn" href="#">View</a>
-                        </div>
-            
-                    </div>
-            
-                </div>`
-            });
+                keys.then((key) => {
+                    contains.then((val) => {
+                        //console.log(key.length)
+                        for (let i = 0; i < 1; i++) {
+                            var sayi = val.length
+                            console.log(sayi)
+                            for(let k = 0 ;k< val.length ; k++){
+                               //cont.push(val[k])
+                               //keyaa.push(key[k])
+                               if(k <sayi){
+                                yuzdeler[k] = key[k] + `: ` +  val[k] + `%`
+                               }
+                               
+                            }
+                            //yuzdeler.push(keyaa + `: ` +  cont + `%`)
+                            console.log(yuzdeler)  
+    
+    
+                            this.githubCard.innerHTML += `
+                                <div class="github-col">
+                                <div class="github-cards">
+                                    <h4>${value[j].name}</h4>
+                                    <div class="card-langu">
+                                    <div class="langu">
+                                    <p>${yuzdeler}</p>
+                                </div></div>
+                                    <div class="github-card-btn">
+                                        <a class="card-btn" href="#">View</a>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>`
+    
+    
+                        };
+
+                    })
+
+
+
+
+
+                   
 
 
 
