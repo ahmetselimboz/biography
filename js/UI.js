@@ -74,7 +74,7 @@ class UI {
 
         githubInfo.then((value) => {
 
-            for (let j = 0; j < value.length; j++) {
+            for (let j = 0; j < 4; j++) {
 
 
 
@@ -84,19 +84,16 @@ class UI {
                 ver.then((val) => {
                     console.log(val);
 
-                    for (let i = 0; i < 15; i++) {
-                        var languStr = `<div class="langu">
-                        <p>${val[i]} 32.4%</p>
-                    </div>`
-
-                        this.githubCard.innerHTML += `
+                    val.forEach((element) => {
+                        var languStr = element;
+                    this.githubCard.innerHTML += `
                     <div class="github-col">
                     <div class="github-cards">
                         <h4>${value[j].name}</h4>
-                        <div class="card-langu">` + languStr +
-
-
-                            `</div>
+                        <div class="card-langu">
+                        <div class="langu">
+                        <p>${languStr} 32.4%</p>
+                    </div></div>
                         <div class="github-card-btn">
                             <a class="card-btn" href="#">View</a>
                         </div>
@@ -104,7 +101,8 @@ class UI {
                     </div>
             
                 </div>`
-                    }
+            });
+
 
 
 
