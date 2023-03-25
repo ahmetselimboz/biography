@@ -70,4 +70,35 @@ class githubApi{
          
     }
 
+    async getValue(path ){
+        return new Promise((resolve, reject) =>{
+            path.then((val => {
+                const values = Object.values(val);
+                
+
+                let toplam = 0;
+                let yuzde = 0;
+                var toplamYuzde = [];
+
+                for(let i = 0 ;i <values.length;i++){
+                    //console.log(values[i]);
+                    toplam = toplam + values[i];
+                    
+                }
+                for(let j = 0 ;j<values.length;j++){
+                    yuzde = ((values[j] * 100)/toplam)
+                    yuzde = Number(yuzde.toFixed(2));
+                    toplamYuzde.push(yuzde);
+                   
+                }
+                //console.log(toplamYuzde)
+                    
+                
+   
+                resolve(toplamYuzde)
+            }))
+        })
+         
+    }
+
 }
