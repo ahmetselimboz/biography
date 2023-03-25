@@ -74,14 +74,14 @@ class UI {
 
         githubInfo.then((value) => {
 
-            for (let j = 0; j < 4; j++) {
+            for (let j = 0; j < 10; j++) {
 
 
 
                 const lang = gitApi.getRepoLang(value[j].languages_url);
                 const keys = gitApi.getKeys(lang);
                 const contains = gitApi.getValue(lang);
-                var yuzdeler  = [];
+                var yuzdeler = [];
                 var keyaa = [];
                 var cont = [];
 
@@ -90,27 +90,39 @@ class UI {
                     contains.then((val) => {
                         //console.log(key.length)
                         for (let i = 0; i < 1; i++) {
-                            var sayi = val.length
-                            console.log(sayi)
-                            for(let k = 0 ;k< val.length ; k++){
-                               //cont.push(val[k])
-                               //keyaa.push(key[k])
-                               if(k <sayi){
-                                yuzdeler[k] = key[k] + `: ` +  val[k] + `%`
-                               }
-                               
+
+
+
+                            for (let k = 0; k < value.length; k++) {
+
+                                //console.log(val.length)
+
+
+                                yuzdeler[k] = key[k] + `: ` + val[k] + `%`
+
                             }
-                            //yuzdeler.push(keyaa + `: ` +  cont + `%`)
-                            console.log(yuzdeler)  
-    
-    
+
+                            var istak = [];
+                            yuzdeler.forEach((element) => {
+                                if(element !== 'undefined: undefined%'){
+                                    istak.push(element);
+                                    //console.log(element)
+                                }
+                                
+                                
+                                
+                            });
+
+                            console.log(istak)
+
+
                             this.githubCard.innerHTML += `
                                 <div class="github-col">
                                 <div class="github-cards">
                                     <h4>${value[j].name}</h4>
                                     <div class="card-langu">
                                     <div class="langu">
-                                    <p>${yuzdeler}</p>
+                                    <p>${istak}</p>
                                 </div></div>
                                     <div class="github-card-btn">
                                         <a class="card-btn" href="#">View</a>
@@ -119,8 +131,8 @@ class UI {
                                 </div>
                         
                             </div>`
-    
-    
+
+
                         };
 
                     })
@@ -129,7 +141,7 @@ class UI {
 
 
 
-                   
+
 
 
 
