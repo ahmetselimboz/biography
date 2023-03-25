@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@ a {
 
 }
 
-ul {
+.navbar ul {
     position: relative;
     display: flex;
 
@@ -522,52 +523,100 @@ h1.fadeInn span:nth-of-type(4) {
     margin: 1rem;
     height:inherit;
     
+    
 }
 .card-langu{
-    display: flex;
-    flex-wrap: wrap;
+    
+    width: 100%;
 }
+
 
 .github-cards{
     
     padding: .5rem;
-    height:inherit;
+    height:280px;
     
+}
+
+#github-icon{
+    color:#fff;
+    font-size: 45px;
 }
 
 .github-cards h4{
-    
-    padding: 2rem 0; 
-    font-size: 25px;
-    color: white
+    font-family: 'Alkatra', cursive;
+    padding: 1rem 0 1rem 0; 
+    font-size: 22px;
+    color: white;
+    font-weight: lighter;
     
 }
+
+.github-about-title h3{
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 0 1rem 0; 
+    font-size: 18px;
+    color: white;
+    font-weight: lighter;
+    
+}
+
+.language-underline {
+    border: none;
+    border-top: 0.2rem solid #fff;
+    max-width: 25rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
 
 .langu{
-    width: 50%;
-    float: left;
-    padding: 1rem 0;
+    
+    padding: 1.5rem 0;
+}
+.langu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.langu p{
+
+
+
+.langu li{
+    font-weight: bolder;
     font-size: 18px;
-    
+    height: 50px;
     padding: 0 2rem;
     color:#fff;
 }
 
 .github-card-btn{
     position: relative;
-    padding: 1.5rem;
+    padding: 2.5rem;
 }
 
 .card-btn {
     font-family: 'PT Sans', sans-serif;
     background-color: rgb(137, 137, 137);
     bottom: 0;
-    padding: .6rem 1.5rem;
+    padding: .6rem 2rem;
     border-radius: 5px;
     color:#fff;
-    font-size: 15px;
+    font-size: 16px;
+}
+
+.git-card-btn {
+   
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(255, 94, 0);
+    bottom: 0;
+   
+    padding: .8rem 3rem;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 18px;
 }
 
