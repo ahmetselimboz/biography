@@ -104,13 +104,13 @@ class UI {
 
                             var istak = [];
                             yuzdeler.forEach((element) => {
-                                if(element !== 'undefined: undefined%'){
+                                if (element !== 'undefined: undefined%') {
                                     istak.push(element);
                                     //console.log(element)
                                 }
-                                
-                                
-                                
+
+
+
                             });
 
                             console.log(istak)
