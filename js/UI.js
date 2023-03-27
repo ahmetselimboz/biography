@@ -45,11 +45,11 @@ class UI {
 
                 }, function () {
                     $(".logo").toggleClass('rotate-logo');
-                    $("li").css('visibility', "visible");
+                    $(".navbar li").css('visibility', "visible");
 
 
                 });
-                $("li").css('visibility', "hidden");
+                $(".navbar li").css('visibility', "hidden");
                 $(".navbar").css('display', 'flex');
 
             });

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+
+/*---------------GLOBAL-CSS-------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+li {
+    list-style: none;
+    float: right;
+    padding: 0 1rem;
+    font-family: 'Quicksand', sans-serif;
+   
+
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+/*---------------FOOTER-CSS-------------------*/
+
+footer{
+    padding: 1rem 0;
+    background-color: rgb(71, 0, 137);
+    color: #fff;
+    text-align: center;
+}
+
+.footer-container{
+    display: flex;
+    padding: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-col{
+    padding: 2rem;
+}
+
+.footer-col h4{
+    font-size: 26px;
+    padding: 2rem 0 1rem 0;
+}
+.footer-underline {
+    border: none;
+    border-top: 0.2rem solid #fff;
+    max-width: 20rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+.footer-col li{
+    padding: 1rem;
+}
+
+.btn-social{
+    display: block;
+    background-color: rgb(137, 137, 137);
+    color:#fff;
+    font-size:25px; 
+    border-radius: 50px;
+    height: 55px;
+    width:55px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.btn-social:hover{
+    transition: .3s ease-in-out;
+    background-color: blueviolet;
+   
+    border: 3px solid #fff;
+
+}
+
+
+/*---------------COPYRIGHT-CSS-------------------*/
+
+.copyright{
+    background-color: rgb(35, 35, 35);
+    padding: 2.4rem 0;
+    text-align: center;
+}
+#copyrightText{
+    font-family: 'Charis SIL', serif;
+    color: #fff;
+    font-size: 18px;
+}
+
+#aroundWeb{
+    display: flex;
+    flex-direction: column;
+}
+
+#aroundWeb li{
+    color:#fff;
+    font-size:18px;
+}
+
+#aroundWeb li:hover{
+    transition: all .4s;
+    font-weight: 800;
+}
+
+#aroundContact{
+    display: flex;
+    flex-direction: column;
+}
+
+#aroundContact li{
+    color:#fff;
+    font-size:18px;
+}
