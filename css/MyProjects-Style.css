@@ -1,0 +1,255 @@
+
+
+
+
+
+/*---------------NAVBAR-CSS-------------------*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(71, 0, 137);
+    color: aliceblue;
+    width: 100%;
+    z-index: 1;
+    height: 5rem;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    position: relative;
+    display: flex;
+}
+
+li a {
+    
+    color: rgb(255, 255, 255);
+    
+}
+li a:hover {
+    font-weight: 900;
+    transition: all .4s;
+
+}
+
+.nav-display {
+    display: none;
+}
+
+
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: aliceblue;
+    z-index: 3;
+    float: left;
+    padding: .2rem;
+    height: 80px;
+}
+
+.logo{
+    color:rgb(71, 0, 137);
+    font-size: 55px;
+    -webkit-transform: rotate(0deg) ;
+    transform: rotate(0deg);
+    -webkit-transition: all .5s ;
+    transition: all .5s ;
+}
+
+.rotate-logo{
+    color:rgb(255, 255, 255);
+    -webkit-transform: rotate(90deg) ;
+    transform: rotate(90deg);
+    -webkit-transition: all .5s ;
+    transition: all .5s ;
+}
+
+.navi{
+      position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(71, 0, 137);
+    color: aliceblue;
+    width: 100%;
+    z-index: 1;
+    height: 5rem;
+}
+
+
+
+
+
+/*---------------GITHUBCARD-CSS-------------------*/
+
+.panel{
+    display: block;
+    text-align: center;
+    padding: 3rem 0;  
+    height: inherit;
+    background: url("https://i.hizliresim.com/a10he3l.jpg");
+    background-size: cover;
+}
+
+
+.about-title h1 {
+    color: rgb(255, 255, 255);;
+    padding-top: 4rem;
+    font-size: 60px;
+}
+
+.about-underline {
+    border: none;
+    border-top: 0.2rem solid rgb(255, 255, 255);
+    max-width: 35rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+}
+
+
+.container{
+    display: flex;
+    padding: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col{
+    border-radius: 10px;
+    background-color: blueviolet;  
+    float: left;
+    width: 33.33%;
+    margin: 1rem;
+    height:inherit;
+    
+    
+}
+.card-langu{
+    
+    width: 100%;
+}
+
+
+.cards{
+    
+    padding: .5rem;
+    height:280px;
+    
+}
+
+#icon{
+    color:#fff;
+    font-size: 45px;
+}
+
+.cards h4{
+    font-family: 'Alkatra', cursive;
+    padding: 1rem 0 1rem 0; 
+    font-size: 22px;
+    color: white;
+    font-weight: lighter;
+    
+}
+
+.about-title h3{
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 0 1rem 0; 
+    font-size: 18px;
+    color: white;
+    font-weight: lighter;
+    
+}
+
+.language-underline {
+    border: none;
+    border-top: 0.2rem solid #fff;
+    max-width: 25rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+.langu{
+    
+    padding: 1.5rem 0;
+}
+.langu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+.langu li{
+    font-weight: bolder;
+    font-size: 18px;
+    height: 50px;
+    padding: 0 2rem;
+    color:#fff;
+}
+
+.github-card-btn{
+    position: relative;
+    padding: 2.5rem;
+}
+
+.card-btn {
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(71, 0, 137);
+    bottom: 0;
+    padding: .6rem 2rem;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 16px;
+}
+
+.card-btn:hover {
+    
+    transition: all .4s; 
+    background-color: rgb(255, 255, 255);
+    color:rgb(71, 0, 137);
+    border:4px solid rgb(71, 0, 137);
+    
+}
+
+/* .git-card-btn {
+   
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(35, 35, 35);
+    bottom: 0;
+   
+    padding: .8rem 3rem;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 18px;
+}
+
+.git-card-btn:hover {
+    transition: all .4s; 
+    background-color: #fff;
+    
+    border-radius: 5px;
+    color:rgb(35, 35, 35);
+    border:4px solid rgb(35, 35, 35);
+    font-size: 18px;
+} */
+
+
+
+
+

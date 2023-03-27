@@ -1,0 +1,254 @@
+
+/*---------------NAVBAR-CSS-------------------*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(233, 233, 233);
+   
+    width: 100%;
+    z-index: 1;
+    height: 5rem;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    position: relative;
+    display: flex;
+}
+
+.navbar li a {
+    
+    color: rgb(71, 0, 137);
+    
+}
+
+.navbar li a:hover {
+    font-weight: 900;
+    transition: all .4s;
+
+}
+
+li a {
+    color: rgb(255, 255, 255);
+}
+
+
+
+li a:hover {
+    font-weight: 900;
+    transition: all .4s;
+
+}
+
+.nav-display {
+    display: none;
+}
+
+
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: aliceblue;
+    z-index: 3;
+    float: left;
+    padding: .2rem;
+    height: 80px;
+}
+
+.logo{
+    color:rgb(233, 233, 233);
+    font-size: 55px;
+    -webkit-transform: rotate(0deg) ;
+    transform: rotate(0deg);
+    -webkit-transition: all .5s ;
+    transition: all .5s ;
+    
+    
+}
+
+.rotate-logo{
+    color:rgb(71, 0, 137);
+    -webkit-transform: rotate(90deg) ;
+    transform: rotate(90deg);
+    -webkit-transition: all .5s ;
+    transition: all .5s ;
+}
+
+.navi{
+      position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(71, 0, 137);
+    color: aliceblue;
+    width: 100%;
+    z-index: 1;
+    height: 5rem;
+}
+
+
+
+
+/*---------------ABOUT-CSS-------------------*/
+
+.section-about {
+    background-image: url("https://i.hizliresim.com/oq4pfev.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+
+}
+
+.about-title {
+    text-align: center;
+}
+
+.about-title h1 {
+    color: rgb(255, 255, 255);;
+    padding-top: 4rem;
+    font-size: 60px;
+}
+
+.about-underline {
+    border: none;
+    border-top: 0.2rem solid rgb(255, 255, 255);;
+    max-width: 35rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+}
+
+.container {
+    position: relative;
+    padding: 4rem 6rem;
+}
+
+.about-panel {
+    display: flex;
+    padding: 2.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.about-img {
+    float: left;
+    width: 40%;
+    height: fit-content;
+    border-radius: 10%;
+    overflow: hidden;
+    border:3px solid #fff;
+   
+}
+
+.about-img img {
+    transform:  scale(1.04);
+    width: 100%;
+
+   
+
+}
+
+
+
+.about-text {
+    width: 100%;
+    float: right;
+    padding: 0 3rem;
+}
+
+
+
+.textAbout {
+    
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+}
+/*---------------EDUCATION-CSS-------------------*/
+
+.edu-panel{
+    padding: 1rem 0;
+    background-image: url("https://i.hizliresim.com/3clstc4.jpg");
+    color: #fff;
+    /* text-align: center; */
+}
+
+
+.edu-container{
+    
+    padding: 2rem 5rem;
+    /* flex-direction: row;
+    justify-content: space-between; */
+}
+
+.edu-box{
+    display: flex;
+    align-items: center;
+}
+
+
+.edu-title {
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.edu-title h1 {
+    color: rgb(35, 35, 35);
+    padding: 4rem 0 0 4rem;
+    font-size: 40px;
+}
+
+.edu-underline {
+    border: none;
+    border-top: 0.2rem solid rgb(35, 35, 35);
+    max-width: 29rem;
+    text-align: left;
+    border-radius: 10px;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.edu-list{
+    
+    padding: 5rem 5rem 5rem 7rem;
+    width: 60%;
+}
+
+.edu-list ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#list-title{
+    font-weight: 800;
+    font-size: 22px;
+    padding: .2rem 0;
+    color:rgb(35, 35, 35);
+}
+
+#list-title-alt{
+    padding: .2rem 0;
+    margin-bottom: 1.5rem;
+    color:rgb(35, 35, 35);
+}
+
+.edu-icon{
+    width: 30%;
+    color: rgb(71, 0, 137);
+    font-size:400px;
+}
+
+
+

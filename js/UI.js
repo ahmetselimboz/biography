@@ -4,9 +4,10 @@ class UI {
         this.displayNav = document.querySelector('.navbar');
         this.logo = document.querySelector("#logo");
         this.githubCard = document.querySelector(".github-container");
-        this.cardLang = document.querySelector(".langu");
-        //this.socialCard = document.querySelector('.header-social');
-        //this.socialCard.addEventListener('mouseover', this.socialCardHover.bind(this))
+        this.projectNames = document.querySelectorAll("#projectName");
+        this.language = document.querySelectorAll('#languUl')
+        this.cardBtn = document.querySelectorAll('.card-btn')
+       
     }
 
 
@@ -43,11 +44,11 @@ class UI {
 
                 }, function () {
                     $(".logo").toggleClass('rotate-logo');
-                    $("li").css('visibility', "visible");
+                    $(".navbar li").css('visibility', "visible");
 
 
                 });
-                $("li").css('visibility', "hidden");
+                $(".navbar li").css('visibility', "hidden");
                 $(".navbar").css('display', 'flex');
 
             });
@@ -72,11 +73,20 @@ class UI {
 
         githubInfo.then((value) => {
 
-            console.log(value)
+            value.sort(function compare(a,b) {
+                var dateA = new Date(a.updated_at);
+                var dateB = new Date(b.updated_at);
+                return dateB - dateA;
+            });
+
+        //    value.forEach((element) =>{
+        //     console.log(element.updated_at)
+        //    })
+           
 
             for (let j = 0; j < 4; j++) {
 
-
+                
 
                 const lang = gitApi.getRepoLang(value[j].languages_url);
                 //var htmlUrl = gitApi.getRepoLang(value[j].url);
@@ -88,12 +98,11 @@ class UI {
 
                 keys.then((key) => {
                     contains.then((val) => {
-
-
+                        //console.log(this.projectNames)
 
                         for (let k = 0; k < value.length; k++) {
 
-                            yuzdeler[k] = `<p>` + key[k] + `: ` + val[k] + `%</p>`
+                            yuzdeler[k] = `<li>` + key[k] + `:`+'  ' + val[k] + `%</li>`
                         }
 
                         var istak = [];
@@ -103,24 +112,18 @@ class UI {
 
                             }
                         });
-                        console.log(this.cardLang);
-                        var texc;
-                        //console.log(istak)
-                        this.githubCard.innerHTML += `
-                                <div class="github-col">
-                                <div class="github-cards">
-                                    <h4>${value[j].name}</h4>
-                                    <div class="card-langu">
-                                    <div class="langu">
-                                    ${istak}
-                                    </div></div>
-                                    <div class="github-card-btn">
-                                        <a class="card-btn" target="_blank" href="https://github.com/ahmetselimboz/${value[j].name}">View</a>
-                                    </div>
-                        
-                                </div>
-                        
-                            </div>`
+
+
+
+                        this.projectNames[j].innerText += value[j].name;
+                        //console.log(this.projectNames[j].innerHTML)
+
+                        for (let i = 0; i < val.length; i++) {
+                            this.language[j].innerHTML += `${istak[i]}`
+                            //console.log(istak[i])
+
+                        }
+                        this.cardBtn[j].href = `https://github.com/ahmetselimboz/${value[j].name}`
 
                     })
                 })
