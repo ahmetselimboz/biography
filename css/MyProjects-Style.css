@@ -117,7 +117,7 @@ li a:hover {
 }
 
 
-.container{
+.git-container{
     display: flex;
     padding: 5rem;
     flex-direction: row;
