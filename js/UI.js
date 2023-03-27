@@ -7,8 +7,7 @@ class UI {
         this.projectNames = document.querySelectorAll("#projectName");
         this.language = document.querySelectorAll('#languUl')
         this.cardBtn = document.querySelectorAll('.card-btn')
-        //this.socialCard = document.querySelector('.header-social');
-        //this.socialCard.addEventListener('mouseover', this.socialCardHover.bind(this))
+       
     }
 
 

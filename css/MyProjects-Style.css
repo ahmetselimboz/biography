@@ -87,247 +87,11 @@ li a:hover {
 
 
 
-/*---------------HEADER-CSS-------------------*/
 
-
-
-
-.header-bg {
-    width: 100%;
-    height: 100%;
-
-
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-
-.header-bg img {
-    width: 100%;
-}
-
-.header-title {
-    font-size: 2.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    float: left;
-    height: inherit;
-    color: rgb(71, 0, 137);
-    flex-direction: column;
-}
-
-.header-alt-title {
-    font-size: 2.8rem;
-    text-align: center;
-
-    color: rgb(35, 35, 35);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-h1.fadeIn span {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeIn 0.5s ease-out forwards;
-    display: inline-block;
-}
-
-h1.fadeIn span:nth-of-type(2) {
-    animation-delay: 0.5s;
-}
-
-h1.fadeIn span:nth-of-type(3) {
-    animation-delay: 1s;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-
-#alt-title-name {
-    font-family: 'Charis SIL', serif;
-    font-size: 1.2rem;
-
-}
-
-.alt-title-word {
-    font-family: 'Charis SIL', serif;
-    font-size: 2.4rem;
-
-    transition: opacity 1s;
-    opacity: 1;
-}
-
-.fade {
-    opacity: 0;
-
-}
-
-
-/*---------------ABOUT-CSS-------------------*/
-
-
-.section-about {
-    background-image: url("https://i.hizliresim.com/38bmctq.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-
-
-}
-
-.section-about-title {
-    text-align: center;
-}
-
-.section-about-title h1 {
-    color: white;
-    padding-top: 4rem;
-    font-size: 60px;
-}
-
-.section-about-underline {
-    border: none;
-    border-top: 0.2rem solid #fff;
-    max-width: 35rem;
-    text-align: center;
-    border-radius: 10px;
-    margin: 1.5rem auto;
-}
-
-.section-container {
-    position: relative;
-    padding: 4rem 6rem;
-}
-
-.section-about-panel {
-    display: flex;
-    padding: 2.5rem;
-    width: 100%;
-    align-items: center;
-}
-
-.section-about-img {
-    float: left;
-    width: 70%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 50%;
-    border:5px solid rgb(137, 137, 137)
-}
-
-.section-about-img img {
-    
-    width: 100%;
-    height: fit-content;
-    transform: scale(1.1);
-    
-
-}
-
-
-
-.section-about-text {
-    width: 100%;
-    float: right;
-    padding: 0 0 0 6rem;
-}
-
-
-
-.section-textAbout {
-    background-color: rgba(54, 0, 104, 0.507);
-    padding: 1.5rem;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
-
-}
-
-
-
-.section-mission-text{
-    padding:2rem 2rem 2rem 2rem;
-    margin: 1rem 0;
-    color:white;
-    font-size: 30px;;
-    height:auto;
-    border-radius: 10px;
-    
-    
-    
-}
-
-.section-mission-text:hover{
-    color:rgb(35, 35, 35);
-    background-color: #fff;
-    
-    
-    transition: .4s ease-in-out;
-}
-
-
-
-h1.fadeInn span {
-    opacity: 0;
-    transform: translateX(-30px);
-    animation: fadeIn 0.5s ease-out forwards;
-    display: inline-block;
-}
-
-h1.fadeInn span:nth-of-type(2) {
-    animation-delay: 0.5s;
-}
-
-h1.fadeInn span:nth-of-type(3) {
-    animation-delay: 1s;
-}
-
-h1.fadeInn span:nth-of-type(4) {
-    animation-delay: 1.5s;
-}
-
-
-@keyframes fadeInn {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
-.learn-more-btn{
-    font-family: 'PT Sans', sans-serif;
-    background-color: rgb(137, 137, 137);
-    padding: .6rem;
-    border-radius: 5px;
-    color:#fff;
-    font-size: 15px;
-    visibility: hidden;
-    
-    /* display: none; */
-}
-
-.section-mission-text:hover .learn-more-btn{
-    visibility: visible;
-    transition: .4s ease-in-out;
-}
 
 /*---------------GITHUBCARD-CSS-------------------*/
 
-.github-panel{
+.panel{
     display: block;
     text-align: center;
     padding: 3rem 0;  
@@ -337,13 +101,13 @@ h1.fadeInn span:nth-of-type(4) {
 }
 
 
-.github-about-title h1 {
+.about-title h1 {
     color: rgb(255, 255, 255);;
     padding-top: 4rem;
     font-size: 60px;
 }
 
-.github-about-underline {
+.about-underline {
     border: none;
     border-top: 0.2rem solid rgb(255, 255, 255);
     max-width: 35rem;
@@ -353,7 +117,7 @@ h1.fadeInn span:nth-of-type(4) {
 }
 
 
-.github-container{
+.container{
     display: flex;
     padding: 5rem;
     flex-direction: row;
@@ -361,7 +125,7 @@ h1.fadeInn span:nth-of-type(4) {
     justify-content: center;
 }
 
-.github-col{
+.col{
     border-radius: 10px;
     background-color: blueviolet;  
     float: left;
@@ -377,19 +141,19 @@ h1.fadeInn span:nth-of-type(4) {
 }
 
 
-.github-cards{
+.cards{
     
     padding: .5rem;
     height:280px;
     
 }
 
-#github-icon{
+#icon{
     color:#fff;
     font-size: 45px;
 }
 
-.github-cards h4{
+.cards h4{
     font-family: 'Alkatra', cursive;
     padding: 1rem 0 1rem 0; 
     font-size: 22px;
@@ -398,7 +162,7 @@ h1.fadeInn span:nth-of-type(4) {
     
 }
 
-.github-about-title h3{
+.about-title h3{
     font-family: 'Poppins', sans-serif;
     padding: 2rem 0 1rem 0; 
     font-size: 18px;
@@ -463,7 +227,7 @@ h1.fadeInn span:nth-of-type(4) {
     
 }
 
-.git-card-btn {
+/* .git-card-btn {
    
     font-family: 'PT Sans', sans-serif;
     background-color: rgb(35, 35, 35);
@@ -483,7 +247,7 @@ h1.fadeInn span:nth-of-type(4) {
     color:rgb(35, 35, 35);
     border:4px solid rgb(35, 35, 35);
     font-size: 18px;
-}
+} */
 
 
 
