@@ -37,20 +37,42 @@ class UI {
     }
 
     navShow() {
+        
         $(".navbar").css('display', 'none');
+        
         $(document).ready(function () {
             $(".nav-logo").click(function () {
-                $(".navbar").animate({
-                    width: "toggle"
-
-                }, function () {
-                    $(".logo").toggleClass('rotate-logo');
-                    $(".navbar li").css('visibility', "visible");
-
-
-                });
-                $(".navbar li").css('visibility', "hidden");
-                $(".navbar").css('display', 'flex');
+                // for(let i = 0; i<=1;i++){
+                //     window.location.reload();
+                // }
+               
+                if($(window).width() > "768" ){
+                    $(".navbar").animate({
+                        width: "toggle"
+    
+                    }, function () {
+                        $(".logo").toggleClass('rotate-logo');
+                        $(".navbar li").css('visibility', "visible");
+    
+    
+                    });
+                    $(".navbar li").css('visibility', "hidden");
+                    $(".navbar").css('display', 'flex');
+                }
+                else{
+                    $(".navbar").animate({
+                        height: "toggle"
+    
+                    }, function () {
+                        $(".logo").toggleClass('rotate-logo');
+                        $(".navbar li").css('visibility', "visible");
+    
+    
+                    });
+                    $(".navbar li").css('visibility', "hidden");
+                    $(".navbar").css('display', 'flex');
+                }
+                
 
             });
         });
@@ -183,25 +205,27 @@ class UI {
 
 
                         this.githubCard.innerHTML += `<div class="col">
-                        <div class="cards">
-                            <i id="icon" class="fa-brands fa-github"></i>
-                            <h4 id="projectName">${value[j].name}</h4>
-                            <hr class="language-underline">
-                            <div class="card-langu">
-                                <div class="langu">
-                                    <ul id="languUl"> 
-                                    ${ista}
-
-                            </ul>
+                            <div class="cards">
+                                <i id="icon" class="fa-brands fa-github"></i>
+                                <h4 id="projectName">${value[j].name}</h4>
+                                <hr class="language-underline">
+                                <div class="card-langu">
+                                    <div class="langu">
+                                        <ul id="languUl"> 
+                                        ${ista}
+    
+                                </ul>
+                                    </div>
                                 </div>
+        
+        
                             </div>
-    
-    
-                        </div>
-                        <div class="github-card-btn">
-                            <a class="card-btn" target="_blank" href="https://github.com/ahmetselimboz/${value[j].name}">View <i class="fa-solid fa-angle-right"></i></a>
-                        </div>
-                    </div>`
+                            <div class="github-card-btn">
+                                <a class="card-btn" target="_blank" href="https://github.com/ahmetselimboz/${value[j].name}">View <i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>`
+
+
 
                         // this.projectNames[j].innerText += value[j].name;
                         // console.log(this.projectNames[j].innerHTML)

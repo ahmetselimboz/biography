@@ -96,8 +96,10 @@ li a:hover {
     text-align: center;
     padding: 3rem 0;  
     height: inherit;
-    background: url("https://i.hizliresim.com/a10he3l.jpg");
+    background: url("https://i.hizliresim.com/t31w7s5.jpg");
     background-size: cover;
+    /* background-position: left; */
+    background-attachment: fixed;
 }
 
 

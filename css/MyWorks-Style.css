@@ -1,0 +1,257 @@
+
+
+
+
+
+/*---------------NAVBAR-CSS-------------------*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(233, 233, 233);
+   
+    width: 100%;
+    z-index: 1;
+    height: 5rem;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    position: relative;
+    display: flex;
+}
+
+.navbar li a {
+    
+    color: rgb(71, 0, 137);
+    
+}
+
+.navbar li a:hover {
+    font-weight: 900;
+    transition: all .4s;
+
+}
+
+li a {
+    color: rgb(255, 255, 255);
+}
+
+
+
+li a:hover {
+    font-weight: 900;
+    transition: all .4s;
+
+}
+
+.nav-display {
+    display: none;
+}
+
+
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: aliceblue;
+    z-index: 3;
+    float: left;
+    padding: .2rem;
+    height: 80px;
+}
+
+.logo{
+    color:rgb(233, 233, 233);
+    font-size: 55px;
+    -webkit-transform: rotate(0deg) ;
+    transform: rotate(0deg);
+    -webkit-transition: all .5s ;
+    transition: all .5s ;
+    
+    
+}
+
+.rotate-logo{
+    color:rgb(71, 0, 137);
+    -webkit-transform: rotate(90deg) ;
+    transform: rotate(90deg);
+    -webkit-transition: all .5s ;
+    transition: all .5s ;
+}
+
+.navi{
+      position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(71, 0, 137);
+    color: aliceblue;
+    width: 100%;
+    z-index: 1;
+    height: 5rem;
+}
+
+
+/*---------------SKILLS-CSS-------------------*/
+
+.skills-panel{
+    /* display: block; */
+    text-align: center;
+    /* padding: 3rem 0;   */
+    /* height: inherit; */
+    background-image: url("https://i.hizliresim.com/9jillmf.jpg");
+    background-size: cover; 
+}
+
+.skills-container{
+    padding: 4rem;
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.skills-title h1 {
+    color: rgb(233, 233, 233);
+    padding-top: 4rem;
+    font-size: 60px;
+}
+
+.skills-title h3{
+    
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 0 1rem 0; 
+    font-size: 18px;
+    color: rgb(233, 233, 233);
+    font-weight: lighter;
+    
+}
+
+
+
+.skills-underline {
+    border: none;
+    border-top: 0.2rem solid rgb(233, 233, 233);
+    max-width: 35rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+}
+
+.skills-content{
+    padding: 3rem 10rem;
+    
+}
+
+
+.skills-content-alt{
+    /* background-color: rgb(64, 64, 64); */
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#content-alt-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.skills-alt-title{
+    
+    text-align: left;
+    padding: 3rem;
+}
+
+#alt-title-2{
+   
+    text-align: right;  
+}
+
+
+.skills-alt-title h5{
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 45px;
+    color: rgb(233, 233, 233);
+    font-weight: lighter;   
+}
+
+#title-1{
+    color:rgb(64, 64, 64);
+}
+
+#title-2{
+    color:rgb(64, 64, 64);
+}
+
+.skills-image{
+    border-radius: 50%;
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+    border: 2px solid rgb(233, 233, 233);
+    
+}
+
+
+
+.skills-image img{
+
+    width: 135%;
+    height: 100%;
+    
+    
+    transform: scale(1.1) translate(-11%, 0%);
+}
+
+#img-2{
+    transform: scale(1) translate(-13%, 0%);
+}
+
+#img-3{
+    height: auto;
+    transform: scale(0.9) translate(-18%, -10%);
+    
+}
+
+.skills-script{
+    width: 70%;
+    padding: 5rem;
+}
+
+.skills-text{
+    font-family: 'Lato', sans-serif;
+    color: rgb(233, 233, 233);
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#skills-text-1{
+    color:rgb(64, 64, 64);
+}
+#skills-text-2{
+    color:rgb(64, 64, 64);
+}
+
+
+
+
+
+
+
+
+
+
+
+
