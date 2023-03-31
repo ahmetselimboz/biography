@@ -37,42 +37,42 @@ class UI {
     }
 
     navShow() {
-        
+
         $(".navbar").css('display', 'none');
-        
+
         $(document).ready(function () {
             $(".nav-logo").click(function () {
                 // for(let i = 0; i<=1;i++){
                 //     window.location.reload();
                 // }
-               
-                if($(window).width() > "768" ){
+
+                if ($(window).width() > "768") {
                     $(".navbar").animate({
                         width: "toggle"
-    
+
                     }, function () {
                         $(".logo").toggleClass('rotate-logo');
                         $(".navbar li").css('visibility', "visible");
-    
-    
+
+
                     });
                     $(".navbar li").css('visibility', "hidden");
                     $(".navbar").css('display', 'flex');
                 }
-                else{
+                else {
                     $(".navbar").animate({
                         height: "toggle"
-    
+
                     }, function () {
                         $(".logo").toggleClass('rotate-logo');
                         $(".navbar li").css('visibility', "visible");
-    
-    
+
+
                     });
                     $(".navbar li").css('visibility', "hidden");
                     $(".navbar").css('display', 'flex');
                 }
-                
+
 
             });
         });
@@ -242,5 +242,7 @@ class UI {
             }
         });
     }
+
+    
 
 }

@@ -28,6 +28,7 @@ altText.myProjectCard();
 
 
 
+
 altText.navShow();
 altText.textChange();
 //const key = gitApi.getRepoLang(githubInfo);
