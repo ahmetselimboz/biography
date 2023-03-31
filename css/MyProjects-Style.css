@@ -1,8 +1,3 @@
-
-
-
-
-
 /*---------------NAVBAR-CSS-------------------*/
 
 .navbar {
@@ -27,10 +22,11 @@
 }
 
 li a {
-    
+
     color: rgb(255, 255, 255);
-    
+
 }
+
 li a:hover {
     font-weight: 900;
     transition: all .4s;
@@ -57,25 +53,25 @@ li a:hover {
     height: 80px;
 }
 
-.logo{
-    color:rgb(71, 0, 137);
+.logo {
+    color: rgb(71, 0, 137);
     font-size: 55px;
-    -webkit-transform: rotate(0deg) ;
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: all .5s ;
-    transition: all .5s ;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 
-.rotate-logo{
-    color:rgb(255, 255, 255);
-    -webkit-transform: rotate(90deg) ;
+.rotate-logo {
+    color: rgb(255, 255, 255);
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    -webkit-transition: all .5s ;
-    transition: all .5s ;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 
-.navi{
-      position: absolute;
+.navi {
+    position: absolute;
     top: 0;
     left: 0;
     background-color: rgb(71, 0, 137);
@@ -85,24 +81,71 @@ li a:hover {
     height: 5rem;
 }
 
+@media screen and (max-width: 480px) {
+    .navbar {
 
+        height: inherit;
+
+    }
+
+    .navbar ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+
+        padding: 1rem;
+
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+
+        height: inherit;
+
+    }
+
+    .navbar ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+
+        padding: 1rem;
+
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {}
 
 
 
 /*---------------GITHUBCARD-CSS-------------------*/
 
-.panel{
+.panel {
     display: block;
     text-align: center;
-    padding: 3rem 0;  
+    padding: 3rem 0;
     height: inherit;
-    background: url("https://i.hizliresim.com/a10he3l.jpg");
+    background: url("https://i.hizliresim.com/t31w7s5.jpg");
     background-size: cover;
+    /* background-position: left; */
+    background-attachment: fixed;
 }
 
 
 .about-title h1 {
-    color: rgb(255, 255, 255);;
+    color: rgb(255, 255, 255);
+    ;
     padding-top: 4rem;
     font-size: 60px;
 }
@@ -117,7 +160,7 @@ li a:hover {
 }
 
 
-.container{
+.git-container {
     display: flex;
     padding: 5rem;
     flex-direction: row;
@@ -125,50 +168,51 @@ li a:hover {
     justify-content: center;
 }
 
-.col{
+.col {
     border-radius: 10px;
-    background-color: blueviolet;  
+    background-color: blueviolet;
     float: left;
     width: 33.33%;
     margin: 1rem;
-    height:inherit;
-    
-    
+    height: inherit;
+
+
 }
-.card-langu{
-    
+
+.card-langu {
+
     width: 100%;
 }
 
 
-.cards{
-    
+.cards {
+
     padding: .5rem;
-    height:280px;
-    
+    height: inherit;
+
 }
 
-#icon{
-    color:#fff;
+#icon {
+    color: #fff;
     font-size: 45px;
 }
 
-.cards h4{
+.cards h4 {
     font-family: 'Alkatra', cursive;
-    padding: 1rem 0 1rem 0; 
+    padding: 1rem 0 1rem 0;
     font-size: 22px;
     color: white;
     font-weight: lighter;
-    
+
 }
 
-.about-title h3{
+.about-title h3 {
     font-family: 'Poppins', sans-serif;
-    padding: 2rem 0 1rem 0; 
+    padding: 2rem 0 1rem 0;
     font-size: 18px;
     color: white;
     font-weight: lighter;
-    
+
 }
 
 .language-underline {
@@ -182,11 +226,12 @@ li a:hover {
 }
 
 
-.langu{
-    
+.langu {
+
     padding: 1.5rem 0;
 }
-.langu ul{
+
+.langu ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -195,15 +240,15 @@ li a:hover {
 
 
 
-.langu li{
+.langu li {
     font-weight: bolder;
     font-size: 18px;
     height: 50px;
     padding: 0 2rem;
-    color:#fff;
+    color: #fff;
 }
 
-.github-card-btn{
+.github-card-btn {
     position: relative;
     padding: 2.5rem;
 }
@@ -214,17 +259,17 @@ li a:hover {
     bottom: 0;
     padding: .6rem 2rem;
     border-radius: 5px;
-    color:#fff;
+    color: #fff;
     font-size: 16px;
 }
 
 .card-btn:hover {
-    
-    transition: all .4s; 
+
+    transition: all .4s;
     background-color: rgb(255, 255, 255);
-    color:rgb(71, 0, 137);
-    border:4px solid rgb(71, 0, 137);
-    
+    color: rgb(71, 0, 137);
+    border: 4px solid rgb(71, 0, 137);
+
 }
 
 /* .git-card-btn {
@@ -249,7 +294,107 @@ li a:hover {
     font-size: 18px;
 } */
 
+@media screen and (max-width: 480px) {
+    .col {
+
+        width: 100%;
+
+    }
+
+    .git-container {
+
+        padding: 2rem;
+
+    }
+
+    .cards h4 {
+
+        font-size: 3.5vw;
 
 
+    }
 
+    .about-title h1 {
+
+        font-size: 10vw;
+    }
+
+    .about-underline {
+
+        max-width: 70vw;
+
+    }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .col {
+
+        width: 70%;
+
+    }
+
+    .git-container {
+
+        padding: 2rem;
+
+    }
+
+    .cards h4 {
+
+        font-size: 3vw;
+
+
+    }
+
+    .about-underline {
+
+        max-width: 70vw;
+
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .col {
+
+        width: 70%;
+
+    }
+
+    .git-container {
+
+        padding: 2rem;
+
+    }
+
+    .cards h4 {
+
+        font-size: 3vw;
+
+
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .col {
+
+        width: 50%;
+
+    }
+
+    .git-container {
+
+        padding: 2rem;
+
+    }
+
+    .cards h4 {
+
+        font-size: 2vw;
+
+
+    }
+}
 

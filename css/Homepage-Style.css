@@ -26,9 +26,12 @@
     display: flex;
 }
 
+
+
 li a {
     
     color: rgb(255, 255, 255);
+   
     
 }
 li a:hover {
@@ -86,6 +89,51 @@ li a:hover {
 }
 
 
+@media screen and (max-width: 480px) {
+    .navbar {
+        
+        height: inherit;
+       
+    }
+    .navbar ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        
+        padding: 1rem;
+        
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        
+        height: inherit;
+       
+    }
+    .navbar ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        
+        padding: 1rem;
+        
+    }
+  }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+   
+  }
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    
+}
+
 
 /*---------------HEADER-CSS-------------------*/
 
@@ -94,8 +142,6 @@ li a:hover {
 
 .header-bg {
     width: 100%;
-    height: 100%;
-
 
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -136,6 +182,7 @@ h1.fadeIn span {
     transform: translateY(30px);
     animation: fadeIn 0.5s ease-out forwards;
     display: inline-block;
+    
 }
 
 h1.fadeIn span:nth-of-type(2) {
@@ -174,6 +221,88 @@ h1.fadeIn span:nth-of-type(3) {
     opacity: 0;
 
 }
+
+@media screen and (max-width: 480px) {
+
+ 
+    
+    .header-bg img {
+        width: 100%;
+        height: 1000px;
+    }
+    .header-title {
+        font-size: 1.1rem;
+        
+    }
+    #alt-title-name {
+        font-size: .7rem;
+    
+    }
+    
+    .alt-title-word {
+        font-size: 1.1rem;
+
+    }
+    
+    
+  }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .header-bg img {
+        width: 100%;
+        height: 1000px;
+    }
+    .header-title {
+        font-size: 1.7rem;
+        
+    }
+    #alt-title-name {
+        font-size: 1rem;
+    
+    }
+    
+    .alt-title-word {
+        font-size: 1.7rem;
+
+    }
+  }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-bg img {
+        width: 100%;
+        height: 1000px;
+    }
+    .header-title {
+        font-size: 2.2rem;
+        
+    }
+    #alt-title-name {
+        font-size: 1.2rem;
+    
+    }
+    
+    .alt-title-word {
+        font-size: 2.2rem;
+
+    }
+  }
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .header-bg img {
+        width: 100%;
+        height: 1000px;
+    }
+    .header-title {
+        font-size: 2.2rem;
+        
+    }
+    #alt-title-name {
+        font-size: 1.2rem;
+    
+    }
+    
+    .alt-title-word {
+        font-size: 2.2rem;
+
+    }
+  }
 
 
 /*---------------ABOUT-CSS-------------------*/
@@ -221,11 +350,14 @@ h1.fadeIn span:nth-of-type(3) {
 
 .section-about-img {
     float: left;
-    width: 70%;
-    height: auto;
+    width: 360px;
+    height: 360px;
+    
     overflow: hidden;
     border-radius: 50%;
-    border:5px solid rgb(137, 137, 137)
+    border:5px solid rgb(137, 137, 137);
+    margin: 3rem 0;
+
 }
 
 .section-about-img img {
@@ -240,9 +372,15 @@ h1.fadeIn span:nth-of-type(3) {
 
 
 .section-about-text {
-    width: 100%;
+    width: 60%;
     float: right;
     padding: 0 0 0 6rem;
+}
+
+.section-about-text h1{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
 
@@ -265,9 +403,8 @@ h1.fadeIn span:nth-of-type(3) {
     font-size: 30px;;
     height:auto;
     border-radius: 10px;
-    
-    
-    
+    display: flex;
+    width: fit-content;
 }
 
 .section-mission-text:hover{
@@ -284,7 +421,7 @@ h1.fadeInn span {
     opacity: 0;
     transform: translateX(-30px);
     animation: fadeIn 0.5s ease-out forwards;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 h1.fadeInn span:nth-of-type(2) {
@@ -324,6 +461,200 @@ h1.fadeInn span:nth-of-type(4) {
     visibility: visible;
     transition: .4s ease-in-out;
 }
+
+
+
+@media screen and (max-width: 480px) {
+
+    .section-about {
+
+        background-size: 500% 100%;
+
+    }
+    .section-container {
+      
+        padding: 4rem 1rem;
+    }
+
+    
+
+    .section-about-panel {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-mission-text{
+        font-size: 30px;
+        display: block;
+    }
+    .section-about-text h1{
+       
+        padding: 0;
+    }
+
+    .section-about-text {
+        width: 100%;
+        float: right;
+        padding: 0
+    }
+
+    .section-about-title h1 {
+    
+        font-size: 11vw;
+    }
+    .section-about-underline {
+       
+        max-width: 70vw;
+        
+    }
+    .section-about-img {
+      
+        width: 90vw;
+        height: 90vw;
+        
+     
+    
+    }
+    
+       
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .section-about {
+
+        background-size: 500% 100%;
+
+    }
+    .section-container {
+        position: relative;
+        padding: 4rem 1rem;
+    }
+
+    .section-about-panel {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-mission-text{
+        font-size: 5vw;
+        display: block;
+    }
+
+    .section-about-text {
+        width: 100%;
+        float: right;
+        padding: 0;
+    }
+
+    .section-about-title h1 {
+        color: white;
+        padding-top: 4rem;
+        font-size: 50px;
+    }
+    .section-about-text h1{
+       
+        padding: 0 4rem;
+    }
+
+    
+    .section-about-underline {
+       
+        max-width: 70vw;
+        
+    }
+  }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .section-about {
+
+        background-size: 500% 100%;
+
+    }
+    .section-container {
+        position: relative;
+        padding: 4rem 1rem;
+    }
+
+    .section-about-panel {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-mission-text{
+        font-size: 45px;
+        display: block;
+    }
+
+    .section-about-text {
+        width: 100%;
+        float: right;
+        padding: 0;
+    }
+
+    .section-about-text h1{
+       
+        padding: 0 5rem;
+    }
+
+    .section-about-title h1 {
+        color: white;
+        padding-top: 4rem;
+        font-size: 50px;
+    }
+
+  }
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .section-about {
+
+        background-size: 500% 100%;
+
+    }
+    .section-container {
+        position: relative;
+        padding: 4rem 1rem;
+    }
+
+    .section-about-panel {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-mission-text{
+        font-size: 45px;
+        display: block;
+    }
+
+    .section-about-text {
+        width: 100%;
+        float: right;
+        padding: 0;
+    }
+
+    .section-about-text h1{
+       
+        padding: 0 10rem;
+    }
+
+    .section-about-title h1 {
+        color: white;
+        padding-top: 4rem;
+        font-size: 50px;
+    }
+
+    
+}
+    
+
 
 /*---------------GITHUBCARD-CSS-------------------*/
 
@@ -380,7 +711,7 @@ h1.fadeInn span:nth-of-type(4) {
 .github-cards{
     
     padding: .5rem;
-    height:280px;
+    height:inherit;
     
 }
 
@@ -392,7 +723,7 @@ h1.fadeInn span:nth-of-type(4) {
 .github-cards h4{
     font-family: 'Alkatra', cursive;
     padding: 1rem 0 1rem 0; 
-    font-size: 22px;
+    font-size: 1.5vw;
     color: white;
     font-weight: lighter;
     
@@ -485,7 +816,95 @@ h1.fadeInn span:nth-of-type(4) {
     font-size: 18px;
 }
 
-
+@media screen and (max-width: 480px) {
+    .github-col{
+        
+        width: 100%;
+   
+    }
+    .github-container{
+       
+        padding: 2rem;
+        
+    }
+    .github-cards h4{
+     
+        font-size: 3.5vw;
+       
+        
+    }
+    .github-about-title h1 {
+        
+        font-size: 10vw;
+    }
+    .github-about-underline {
+       
+        max-width: 70vw;
+        
+    }
+    
+       
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .github-col{
+        
+        width: 70%;
+   
+    }
+    .github-container{
+       
+        padding: 2rem;
+        
+    }
+    .github-cards h4{
+     
+        font-size: 3vw;
+       
+        
+    }
+    .github-about-underline {
+       
+        max-width: 70vw;
+        
+    }
+  }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .github-col{
+        
+        width: 70%;
+   
+    }
+    .github-container{
+       
+        padding: 2rem;
+        
+    }
+    .github-cards h4{
+     
+        font-size: 3vw;
+       
+        
+    }
+  }
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    
+    .github-col{
+        
+        width: 50%;
+   
+    }
+    .github-container{
+       
+        padding: 2rem;
+        
+    }
+    .github-cards h4{
+     
+        font-size: 2vw;
+       
+        
+    }
+}
 
 
 

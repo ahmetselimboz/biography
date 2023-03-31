@@ -22,6 +22,8 @@ const githubInfo = gitApi.getGithubInfo();
 
 
 altText.gitCard();
+altText.myProjectCard();
+
 
 
 
