@@ -1,11 +1,14 @@
+
+
+
 /*---------------NAVBAR-CSS-------------------*/
 
 .navbar {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(233, 233, 233);
-
+    background-color: rgb(71, 0, 137);
+    color: aliceblue;
     width: 100%;
     z-index: 1;
     height: 5rem;
@@ -21,23 +24,14 @@
     display: flex;
 }
 
-.navbar li a {
 
-    color: rgb(71, 0, 137);
-
-}
-
-.navbar li a:hover {
-    font-weight: 900;
-    transition: all .4s;
-
-}
 
 li a {
+
     color: rgb(255, 255, 255);
+
+
 }
-
-
 
 li a:hover {
     font-weight: 900;
@@ -66,18 +60,16 @@ li a:hover {
 }
 
 .logo {
-    color: rgb(233, 233, 233);
+    color: rgb(71, 0, 137);
     font-size: 55px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transition: all .5s;
     transition: all .5s;
-
-
 }
 
 .rotate-logo {
-    color: rgb(71, 0, 137);
+    color: rgb(255, 255, 255);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     -webkit-transition: all .5s;
@@ -94,6 +86,7 @@ li a:hover {
     z-index: 1;
     height: 5rem;
 }
+
 
 @media screen and (max-width: 480px) {
     .navbar {
@@ -148,7 +141,7 @@ li a:hover {
     text-align: center;
     /* padding: 3rem 0;   */
     /* height: inherit; */
-    background-image: url("https://i.hizliresim.com/9jillmf.jpg");
+    background-image: url("https://i.hizliresim.com/dbyd99g.png");
     background-size: cover;
 }
 
@@ -162,7 +155,7 @@ li a:hover {
 }
 
 .skills-title h1 {
-    color: rgb(233, 233, 233);
+    color: rgb(64, 64, 64);
     padding-top: 4rem;
     font-size: 60px;
 }
@@ -172,7 +165,7 @@ li a:hover {
     font-family: 'Poppins', sans-serif;
     padding: 2rem 0 1rem 0;
     font-size: 18px;
-    color: rgb(233, 233, 233);
+    color: rgb(64, 64, 64);
     font-weight: lighter;
 
 }
@@ -181,7 +174,7 @@ li a:hover {
 
 .skills-underline {
     border: none;
-    border-top: 0.2rem solid rgb(233, 233, 233);
+    border-top: 0.2rem solid rgb(64, 64, 64);
     max-width: 35rem;
     text-align: center;
     border-radius: 10px;
@@ -332,7 +325,7 @@ li a:hover {
     }
 
     #skills-text-2 {
-        color: rgb(216, 216, 216);
+        color: rgb(64, 64, 64);
     }
 
     .skills-title h1 {
@@ -391,7 +384,7 @@ li a:hover {
     }
 
     #skills-text-2 {
-        color: rgb(216, 216, 216);
+        color:rgb(64, 64, 64);
     }
 
     .skills-text {
@@ -448,7 +441,7 @@ li a:hover {
     }
 
     #skills-text-2 {
-        color: rgb(216, 216, 216);
+        color: rgb(64, 64, 64);
     }
 
     .skills-text {
@@ -457,6 +450,352 @@ li a:hover {
 
     }
 
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+
+
+/*---------------LANGUAGES-CSS-------------------*/
+
+
+.language-panel {
+    font-family: "Poppins", sans-serif;
+    background-image: radial-gradient(circle at center, #899Dc4, #848485);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: inherit;
+    padding: 4rem 0;
+    background: radial-gradient(#410582, #0c090f);
+    font-weight: 300;
+
+    overflow: hidden;
+}
+
+.language-container {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-title {
+    text-align: center;
+}
+
+.language-title h1 {
+    color: rgb(233, 233, 233);
+    padding-top: 4rem;
+    font-size: 60px;
+}
+
+.language-title h3 {
+
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 0 1rem 0;
+    font-size: 18px;
+    color: rgb(233, 233, 233);
+    font-weight: lighter;
+
+}
+
+
+
+.language-underline {
+    border: none;
+    border-top: 0.2rem solid rgb(233, 233, 233);
+    max-width: 35rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+}
+
+
+
+.all {
+    display: flex;
+    perspective: 10px;
+    transform: perspective(300px) rotateX(20deg);
+    will-change: perspective;
+    perspective-origin: center center;
+    transition: all 1.3s ease-out;
+    justify-content: center;
+    transform-style: preserve-3
+}
+
+.all:hover {
+    perspective: 1000px;
+    transition: all 1.3s ease-in;
+    transform: perspective(10000px) rotate(0deg);
+}
+
+.all:hover .text {
+    opacity: 1;
+}
+
+
+
+
+
+
+.all:hover>div {
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.all:hover .explainer {
+    opacity: 0;
+}
+
+.explainer span {
+    color: #ffffff;
+}
+
+.left,
+.right,
+.lefter,
+.righter {
+    
+    width: 200px;
+    height: 150px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px 5px rgba(199, 199, 199, 0.4);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+
+}
+
+.center{
+   
+    width: 200px;
+    height: 150px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px 5px rgba(199, 199, 199, 0.4);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+
+}
+
+
+
+
+.left:hover,
+.center:hover,
+.right:hover,
+.lefter:hover,
+.righter:hover {
+    box-shadow: 0 0 30px 10px rgba(242, 242, 242, 0.6);
+    background-color: rgb(239, 239, 239);
+
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    bottom: 0;
+    left: auto;
+    position: absolute;
+
+    will-change: transform;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
+}
+
+.lefter {
+    transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+    background-image: url("https://i.hizliresim.com/mctjswh.png");
+
+
+}
+
+.left {
+    transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+    background-image: url("https://i.hizliresim.com/iqovuai.png");
+}
+
+.center {
+    opacity: 1;
+    background-image: url("https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png");
+}
+
+.right {
+    transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+    background-image: url("https://i.hizliresim.com/nhner3w.png");
+}
+
+.righter {
+    transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+    background-image: url("https://i.hizliresim.com/pcj8fb2.png");
+}
+
+.explainer {
+
+    font-weight: 300;
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 100%;
+    background-color: #303050;
+    background-image: radial-gradient(circle at center top, #cce, rgb(69, 69, 69));
+    border-radius: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+
+    .all {
+        flex-direction: column;
+    }
+
+    .lefter {
+        
+        transform: translateX(0) translateZ(-50px) rotateY(0deg);
+        margin: 3rem 0;
+
+
+    }
+
+    .left {
+        
+        transform: translateX(0) translateZ(-25px) rotateY(0deg);
+        margin: 0 0 3rem 0;
+    }
+
+    .center {
+        
+        opacity: 1;
+        margin: 0 0 3rem 0;
+    }
+
+    .right {
+        
+        transform: translateX(0) translateZ(-25px) rotateY(0deg);
+        margin: 0 0 3rem 0;
+    }
+
+    .righter {
+        
+        transform: translateX(0) translateZ(-50px) rotateY(0deg);
+        margin: 0 0 3rem 0;
+    }
+
+    .language-panel {
+        height: inherit;
+    }
+
+    .languages-title h1 {
+
+
+        font-size: 12vw;
+
+
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .all {
+        flex-direction: column;
+    }
+
+    .lefter {
+        transform: translateX(0) translateZ(-50px) rotateY(0deg);
+        margin: 3rem 0;
+        
+    }
+
+    .left {
+        transform: translateX(0) translateZ(-25px) rotateY(0deg);
+        margin: 0 0 3rem 0;
+        
+    }
+
+    .center {
+        opacity: 1;
+        margin: 0 0 3rem 0;
+    }
+
+    .right {
+        transform: translateX(0) translateZ(-25px) rotateY(0deg);
+        margin: 0 0 3rem 0;
+        
+    }
+
+    .righter {
+        transform: translateX(0) translateZ(-50px) rotateY(0deg);
+        margin: 0 0 3rem 0;
+        
+    }
+
+    .language-panel {
+        height: inherit;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .all {
+        flex-direction: column;
+    }
+
+    .lefter {
+        transform: translateX(0) translateZ(-50px) rotateY(0deg);
+        margin: 3rem 0;
+        
+
+    }
+
+    .left {
+        transform: translateX(0) translateZ(-25px) rotateY(0deg);
+        margin: 0 0 3rem 0;
+        
+    }
+
+    .center {
+        opacity: 1;
+        margin: 0 0 3rem 0;
+    }
+
+    .right {
+        transform: translateX(0) translateZ(-25px) rotateY(0deg);
+        margin: 0 0 3rem 0;
+        
+    }
+
+    .righter {
+        transform: translateX(0) translateZ(-50px) rotateY(0deg);
+        margin: 0 0 3rem 0;
+        
+    }
+
+    .language-panel {
+        height: inherit;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {}

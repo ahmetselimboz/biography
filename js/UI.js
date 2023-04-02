@@ -8,6 +8,7 @@ class UI {
         this.projectNames = document.querySelectorAll("#projectName");
         this.language = document.querySelectorAll('#languUl')
         this.cardBtn = document.querySelectorAll('.card-btn')
+   
 
     }
 
@@ -243,6 +244,7 @@ class UI {
         });
     }
 
-    
+   
+  
 
 }
