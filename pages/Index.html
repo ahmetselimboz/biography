@@ -10,11 +10,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/MyWebSite2/css/Homepage-Style.css">
     <link rel="stylesheet" href="/MyWebSite2/css/main.css" class="css">
-
-    <title>Ahmet Selim Boz | Kişisel Web Sitesi</title>
+    <link rel="icon" href="https://i.hizliresim.com/i62at0u.png" type="image/icon type">
+    <title>Ahmet Selim Boz</title>
 </head>
 
 <body>
+
+    <div class="loader"><i class="logo fa-solid fa-qrcode"></i></div>
 
     <div class="nav-logo">
 
@@ -74,7 +76,7 @@
                                 </div>
 
                                 &nbsp;
-                                <a class="learn-more-btn" href="#">Learn More <i
+                                <a class="learn-more-btn" href="MyWorks.html#work-1">Learn More <i
                                         class="fa-solid fa-angle-right"></i></a>
                             </span>
 
@@ -86,7 +88,7 @@
                                 </div>
 
                                 &nbsp;
-                                <a class="learn-more-btn" href="#">Learn More <i
+                                <a class="learn-more-btn" href="MyWorks.html#work-2">Learn More <i
                                         class="fa-solid fa-angle-right"></i></a>
                             </span>
 
@@ -98,7 +100,7 @@
                                 </div>
 
                                 &nbsp;
-                                <a class="learn-more-btn" href="#">Learn More <i
+                                <a class="learn-more-btn" href="MyWorks.html#work-3">Learn More <i
                                         class="fa-solid fa-angle-right"></i></a>
                             </span>
 
@@ -240,7 +242,8 @@
                         </a>
                     </li>
                     <li id="footer-li">
-                        <a href="https://www.linkedin.com/in/ahmet-selim-boz-216847229/" class="btn-social" target="_blank">
+                        <a href="https://www.linkedin.com/in/ahmet-selim-boz-216847229/" class="btn-social"
+                            target="_blank">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </li>
@@ -277,6 +280,24 @@
         <small id="copyrightText">Copyright © ASB 2023</small>
     </div>
 
+    <script>
+
+        window.addEventListener("load", () => {
+
+            console.log('working...')
+
+            const loader = document.querySelector('.loader');
+
+            loader.classList.add('loader-hidden');
+
+            loader.addEventListener('transitionend', () => {
+
+                document.body.removeChild('loader');
+            })
+
+        })
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>

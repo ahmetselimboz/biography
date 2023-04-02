@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        <link rel="icon" href="https://i.hizliresim.com/i62at0u.png" type="image/icon type">
     <link rel="stylesheet" href="/MyWebSite2/css/ContactMe-Style.css">
     <link rel="stylesheet" href="/MyWebSite2/css/main.css" class="css">
 
-    <title>Ahmet Selim Boz | Kişisel Web Sitesi</title>
+    <title>Ahmet Selim Boz</title>
 </head>
 
 <body>
+
+    <div class="loader"><i class="logo fa-solid fa-qrcode"></i></div>
 
     <div class="nav-logo">
 
@@ -121,6 +123,24 @@
         <small id="copyrightText">Copyright © ASB 2023</small>
     </div>
 
+    <script>
+
+        window.addEventListener("load", () => {
+
+            console.log('working...')
+
+            const loader = document.querySelector('.loader');
+
+            loader.classList.add('loader-hidden');
+
+            loader.addEventListener('transitionend', () => {
+
+                document.body.removeChild('loader');
+            })
+
+        })
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>

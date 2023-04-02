@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="stylesheet" href="/MyWebSite2/css/MyWorks-Style.css">
     <link rel="stylesheet" href="/MyWebSite2/css/main.css" class="css">
-
-    <title>Ahmet Selim Boz | Kişisel Web Sitesi</title>
+    <link rel="icon" href="https://i.hizliresim.com/i62at0u.png" type="image/icon type">
+    <title>Ahmet Selim Boz</title>
 </head>
 
 <body>
+
+    <div class="loader"><i class="logo fa-solid fa-qrcode"></i></div>
 
     <div class="nav-logo">
 
@@ -36,10 +38,10 @@
                 <div class="skills-title">
                     <h1>My Works</h1>
                     <hr class="skills-underline">
-                    <h3>Hi! You can learn all about my works.</h3>
+                    <h3>Hi! You can learn about all my works.</h3>
                 </div>
 
-                <div class="skills-content">
+                <div class="skills-content" id="work-1">
                     <div id="alt-title-1" class="skills-alt-title">
                         <h5 id="title-2"><i class="fa-solid fa-code"></i> Web Developer</h5>
                     </div>
@@ -63,7 +65,7 @@
                     </div>
 
                 </div>
-                <div class="skills-content">
+                <div class="skills-content" id="work-2">
                     <div id="alt-title-2" class="skills-alt-title">
                         <h5 id="title-2">Co-Founder at FABA Software <i class="fa-solid fa-code"></i> </h5>
                     </div>
@@ -87,7 +89,7 @@
                     </div>
 
                 </div>
-                <div class="skills-content">
+                <div class="skills-content" id="work-3">
                     <div id="alt-title-1" class="skills-alt-title">
                         <h5 id="title-2"><i class="fa-solid fa-code"></i> Freelancer</h5>
                     </div>
@@ -225,7 +227,24 @@
     </div>
 
 
+    <script>
 
+        window.addEventListener("load", () => {
+
+            console.log('working...')
+
+            const loader = document.querySelector('.loader');
+
+            loader.classList.add('loader-hidden');
+
+            loader.addEventListener('transitionend', () => {
+
+                document.body.removeChild('loader');
+            })
+
+        })
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>

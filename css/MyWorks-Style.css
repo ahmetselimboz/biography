@@ -1,3 +1,6 @@
+
+
+
 /*---------------NAVBAR-CSS-------------------*/
 
 .navbar {
@@ -322,7 +325,7 @@ li a:hover {
     }
 
     #skills-text-2 {
-        color: rgb(216, 216, 216);
+        color: rgb(64, 64, 64);
     }
 
     .skills-title h1 {
@@ -381,7 +384,7 @@ li a:hover {
     }
 
     #skills-text-2 {
-        color: rgb(216, 216, 216);
+        color:rgb(64, 64, 64);
     }
 
     .skills-text {
@@ -438,7 +441,7 @@ li a:hover {
     }
 
     #skills-text-2 {
-        color: rgb(216, 216, 216);
+        color: rgb(64, 64, 64);
     }
 
     .skills-text {
@@ -461,7 +464,7 @@ li a:hover {
     background-image: radial-gradient(circle at center, #899Dc4, #848485);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: inherit;
     padding: 4rem 0;
     background: radial-gradient(#410582, #0c090f);
     font-weight: 300;
@@ -530,6 +533,11 @@ li a:hover {
     opacity: 1;
 }
 
+
+
+
+
+
 .all:hover>div {
     opacity: 1;
     transition-delay: 0s;
@@ -544,10 +552,10 @@ li a:hover {
 }
 
 .left,
-.center,
 .right,
 .lefter,
 .righter {
+    
     width: 200px;
     height: 150px;
     transform-style: preserve-3d;
@@ -565,6 +573,29 @@ li a:hover {
     cursor: pointer;
 
 }
+
+.center{
+   
+    width: 200px;
+    height: 150px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px 5px rgba(199, 199, 199, 0.4);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+
+}
+
+
+
 
 .left:hover,
 .center:hover,
@@ -644,6 +675,7 @@ li a:hover {
     }
 
     .lefter {
+        
         transform: translateX(0) translateZ(-50px) rotateY(0deg);
         margin: 3rem 0;
 
@@ -651,23 +683,27 @@ li a:hover {
     }
 
     .left {
+        
         transform: translateX(0) translateZ(-25px) rotateY(0deg);
         margin: 0 0 3rem 0;
     }
 
     .center {
+        
         opacity: 1;
         margin: 0 0 3rem 0;
     }
 
     .right {
+        
         transform: translateX(0) translateZ(-25px) rotateY(0deg);
         margin: 0 0 3rem 0;
     }
 
     .righter {
+        
         transform: translateX(0) translateZ(-50px) rotateY(0deg);
-        margin: 3rem 0;
+        margin: 0 0 3rem 0;
     }
 
     .language-panel {
@@ -691,13 +727,13 @@ li a:hover {
     .lefter {
         transform: translateX(0) translateZ(-50px) rotateY(0deg);
         margin: 3rem 0;
-
-
+        
     }
 
     .left {
         transform: translateX(0) translateZ(-25px) rotateY(0deg);
         margin: 0 0 3rem 0;
+        
     }
 
     .center {
@@ -708,11 +744,13 @@ li a:hover {
     .right {
         transform: translateX(0) translateZ(-25px) rotateY(0deg);
         margin: 0 0 3rem 0;
+        
     }
 
     .righter {
         transform: translateX(0) translateZ(-50px) rotateY(0deg);
-        margin: 3rem 0;
+        margin: 0 0 3rem 0;
+        
     }
 
     .language-panel {
@@ -728,13 +766,14 @@ li a:hover {
     .lefter {
         transform: translateX(0) translateZ(-50px) rotateY(0deg);
         margin: 3rem 0;
-
+        
 
     }
 
     .left {
         transform: translateX(0) translateZ(-25px) rotateY(0deg);
         margin: 0 0 3rem 0;
+        
     }
 
     .center {
@@ -745,11 +784,13 @@ li a:hover {
     .right {
         transform: translateX(0) translateZ(-25px) rotateY(0deg);
         margin: 0 0 3rem 0;
+        
     }
 
     .righter {
         transform: translateX(0) translateZ(-50px) rotateY(0deg);
-        margin: 3rem 0;
+        margin: 0 0 3rem 0;
+        
     }
 
     .language-panel {
