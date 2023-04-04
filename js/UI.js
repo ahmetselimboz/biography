@@ -90,7 +90,7 @@ class UI {
         }
     }
 
-    gitCard() {
+    async gitCard() {
         const gitApi = new githubApi();
 
         const githubInfo = gitApi.getGithubInfo();
@@ -155,7 +155,7 @@ class UI {
         });
     }
 
-    myProjectCard() {
+    async myProjectCard() {
         const gitApi = new githubApi();
 
         const githubInfo = gitApi.getGithubInfo();

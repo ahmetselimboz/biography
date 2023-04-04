@@ -141,7 +141,7 @@ li a:hover {
     text-align: center;
     /* padding: 3rem 0;   */
     /* height: inherit; */
-    background-image: url("https://i.hizliresim.com/dbyd99g.png");
+    background-image: url("../assets/MyWorkBg.png");
     background-size: cover;
 }
 
@@ -626,14 +626,14 @@ li a:hover {
 
 .lefter {
     transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
-    background-image: url("https://i.hizliresim.com/mctjswh.png");
+    background-image: url("../assets/Python.png");
 
 
 }
 
 .left {
     transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
-    background-image: url("https://i.hizliresim.com/iqovuai.png");
+    background-image: url("../assets/NodejsMondoDB.png");
 }
 
 .center {
@@ -643,12 +643,12 @@ li a:hover {
 
 .right {
     transform: translateX(30px) translateZ(-25px) rotateY(5deg);
-    background-image: url("https://i.hizliresim.com/nhner3w.png");
+    background-image: url("../assets/NetMssql.png");
 }
 
 .righter {
     transform: translateX(60px) translateZ(-50px) rotateY(10deg);
-    background-image: url("https://i.hizliresim.com/pcj8fb2.png");
+    background-image: url("../assets/cc.png");
 }
 
 .explainer {
