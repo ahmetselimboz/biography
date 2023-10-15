@@ -74,7 +74,7 @@ class githubApi{
         return new Promise((resolve, reject) =>{
             path.then((val => {
                 const values = Object.values(val);
-                
+                console.log(values);
 
                 let toplam = 0;
                 let yuzde = 0;

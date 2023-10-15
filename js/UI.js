@@ -95,6 +95,8 @@ class UI {
 
         const githubInfo = gitApi.getGithubInfo();
 
+        //console.log(githubInfo);
+
         githubInfo.then((value) => {
 
             value.sort(function compare(a, b) {
