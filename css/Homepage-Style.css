@@ -351,7 +351,8 @@ h1.fadeIn span:nth-of-type(3) {
   width: 50%;
   padding: 3rem 2rem;
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(55px);
+  /* backdrop-filter: blur(55px); */
+  background-color: #e4e4e4;
   border-radius: 10px;
   margin: 3rem 0;
 }
@@ -411,7 +412,7 @@ h1.fadeIn span:nth-of-type(3) {
 .blog-button:hover i {
   transition: all 0.4s;
   color: rgb(35, 35, 35);
-  font-size: 18px;
+
 }
 
 @media screen and (max-width: 480px) {
